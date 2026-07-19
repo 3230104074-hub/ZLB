@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b4f9f" />
+    <meta name="description" content="邹洛斌的个人博客，记录课程学习、体育训练、科研探索与每日生活。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="邹洛斌的个人记录" />
+    <meta property="og:description" content="课程笔记、训练日志、科研札记，以及每天的学习与生活。" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary" />
+    <title>邹洛斌的个人记录</title>
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site-config.js" defer></script>
+    <script src="assets/js/records-data.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner wide-container">
+        <a class="brand" href="#home" aria-label="返回首页" data-site-title>邹洛斌的个人记录</a>
+
+        <nav class="desktop-nav" aria-label="主要导航">
+          <a class="search-nav" href="notes/index.html#search"><span aria-hidden="true">⌕</span> 搜索</a>
+          <a href="#home">首页</a>
+          <a href="notes/index.html">文章</a>
+          <a href="#categories">分类</a>
+          <a href="#about">关于</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="切换深色模式" title="切换主题">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+          <button class="icon-button menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden>
+        <a href="#home">首页</a>
+        <a href="notes/index.html">全部文章</a>
+        <a href="notes/index.html?category=course" data-category-name="course">课程笔记</a>
+        <a href="notes/index.html?category=training" data-category-name="training">训练日志</a>
+        <a href="notes/index.html?category=research" data-category-name="research">科研札记</a>
+        <a href="notes/index.html?category=daily" data-category-name="daily">每日记录</a>
+        <a href="#about">关于我</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="blog-hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-sky" aria-hidden="true">
+          <span class="hero-orb hero-orb-one"></span>
+          <span class="hero-orb hero-orb-two"></span>
+          <span class="hero-horizon"></span>
+        </div>
+        <div class="hero-content container">
+          <p class="hero-kicker">PERSONAL BLOG</p>
+          <h1 id="hero-title" data-site-title>邹洛斌的个人记录</h1>
+          <p data-owner-intro>我在这里记录课程学习、体育训练、科研探索，以及平凡但重要的每一天。</p>
+        </div>
+        <a class="scroll-down" href="#blog-content" aria-label="查看最新文章"><span aria-hidden="true">⌄</span></a>
+      </section>
+
+      <div class="blog-layout container" id="blog-content">
+        <section class="post-feed" aria-labelledby="latest-title">
+          <div class="feed-heading">
+            <div>
+              <p class="section-label">RECENT POSTS</p>
+              <h2 id="latest-title">最新文章</h2>
+            </div>
+            <a href="notes/index.html">查看归档 <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="post-list" id="post-feed" aria-live="polite"></div>
+        </section>
+
+        <aside class="blog-sidebar" id="about" aria-label="个人资料与文章导航">
+          <section class="sidebar-card profile-card">
+            <div class="profile-avatar" data-owner-initials aria-hidden="true">ZLB</div>
+            <h2 data-owner-name>邹洛斌</h2>
+            <p data-owner-intro>我在这里记录课程学习、体育训练、科研探索，以及平凡但重要的每一天。</p>
+            <div class="profile-stats" aria-label="网站统计">
+              <a href="notes/index.html"><strong data-record-total>0</strong><span>文章</span></a>
+              <a href="notes/index.html"><strong data-category-total>0</strong><span>分类</span></a>
+              <a href="notes/index.html"><strong data-tag-total>0</strong><span>标签</span></a>
+            </div>
+            <div class="profile-actions">
+              <a data-email-link href="mailto:3230104074@zju.edu.cn">邮箱</a>
+              <button class="copy-email" type="button">复制邮箱</button>
+              <a data-github-link href="#">GitHub</a>
+            </div>
+          </section>
+
+          <section class="sidebar-card notice-card">
+            <h2><span aria-hidden="true">◎</span> 关于这里</h2>
+            <p>课程、训练、科研和日常都放在同一条时间线上，分类只负责帮助查找。</p>
+          </section>
+
+          <section class="sidebar-card" id="categories">
+            <h2><span aria-hidden="true">▦</span> 分类</h2>
+            <div class="sidebar-categories" data-sidebar-categories></div>
+          </section>
+
+          <section class="sidebar-card">
+            <h2><span aria-hidden="true">◷</span> 最近文章</h2>
+            <div class="sidebar-recent" data-sidebar-recent></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="current-year"></span> <strong data-owner-name>邹洛斌</strong></p>
+        <p>记录学习，也记录生活。</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="返回页面顶部" title="返回顶部">↑</button>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <noscript><div class="noscript-message">请启用 JavaScript，以显示文章记录。</div></noscript>
+  </body>
+</html>
