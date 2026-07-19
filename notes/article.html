@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b4f9f" />
+    <meta name="description" content="邹洛斌的个人记录。" />
+    <title>文章 · 邹洛斌</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/articles.css" />
+    <script src="../assets/js/site-config.js" defer></script>
+    <script src="../assets/js/records-data.js" defer></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/article.js" defer></script>
+  </head>
+  <body data-page="article">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="header-inner wide-container">
+        <a class="brand" href="../index.html" aria-label="返回网站首页" data-site-title>邹洛斌的个人记录</a>
+        <nav class="desktop-nav" aria-label="主要导航">
+          <a class="search-nav" href="index.html#search"><span aria-hidden="true">⌕</span> 搜索</a>
+          <a href="../index.html">首页</a>
+          <a href="index.html">文章</a>
+          <a href="index.html#archive-filter">分类</a>
+          <a href="../index.html#about">关于</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="切换深色模式" title="切换主题">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+          <button class="icon-button menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden>
+        <a href="../index.html">首页</a>
+        <a href="index.html">全部文章</a>
+        <a href="../index.html#about">关于我</a>
+      </nav>
+    </header>
+
+    <main class="article-main" id="main-content">
+      <div id="article-view">
+        <section class="page-hero article-hero" id="article-hero" aria-labelledby="article-title">
+          <div class="page-hero-inner article-heading container">
+            <a class="article-category" id="article-category" href="index.html">个人记录</a>
+            <h1 id="article-title">正在打开记录…</h1>
+            <p class="article-summary" id="article-summary"></p>
+            <div class="article-meta">
+              <time id="article-date"></time>
+              <span id="article-reading-time"></span>
+            </div>
+            <div class="tag-list article-tags" id="article-tags" aria-label="文章标签"></div>
+          </div>
+        </section>
+
+        <div class="article-page container">
+          <article class="article-paper article-content" id="article-content"></article>
+          <aside class="article-side" aria-label="文章目录与分类">
+            <section class="article-toc sidebar-card">
+              <h2><span aria-hidden="true">☷</span> 本页目录</h2>
+              <nav id="article-toc"></nav>
+            </section>
+            <section class="sidebar-card article-category-card">
+              <h2><span aria-hidden="true">▦</span> 文章分类</h2>
+              <div class="sidebar-categories" data-sidebar-categories></div>
+            </section>
+          </aside>
+        </div>
+
+        <nav class="container article-navigation" id="article-navigation" aria-label="其他记录"></nav>
+      </div>
+
+      <section class="container article-missing" id="article-missing" hidden>
+        <p class="page-kicker">RECORD NOT FOUND</p>
+        <h1>没有找到这篇记录</h1>
+        <p>可能是文章链接已经改变，或者数据文件中的 id 与网址不一致。</p>
+        <a class="button button-primary" href="index.html">返回文章归档</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="current-year"></span> <strong data-owner-name>邹洛斌</strong></p>
+        <p>记录学习，也记录生活。</p>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="返回页面顶部">↑</button>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

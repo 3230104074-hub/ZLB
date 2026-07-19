@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b4f9f" />
+    <meta name="description" content="邹洛斌的课程、训练、科研与每日记录归档。" />
+    <title>文章归档 · 邹洛斌</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/articles.css" />
+    <script src="../assets/js/site-config.js" defer></script>
+    <script src="../assets/js/records-data.js" defer></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/notes.js" defer></script>
+  </head>
+  <body data-page="archive">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="header-inner wide-container">
+        <a class="brand" href="../index.html" aria-label="返回网站首页" data-site-title>邹洛斌的个人记录</a>
+        <nav class="desktop-nav" aria-label="主要导航">
+          <a class="search-nav" href="#search"><span aria-hidden="true">⌕</span> 搜索</a>
+          <a href="../index.html">首页</a>
+          <a class="is-active" href="index.html" aria-current="page">文章</a>
+          <a href="#archive-filter">分类</a>
+          <a href="../index.html#about">关于</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="切换深色模式" title="切换主题">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+          <button class="icon-button menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden>
+        <a href="../index.html">首页</a>
+        <a href="index.html">全部文章</a>
+        <a href="index.html?category=course" data-category-name="course">课程笔记</a>
+        <a href="index.html?category=training" data-category-name="training">训练日志</a>
+        <a href="index.html?category=research" data-category-name="research">科研札记</a>
+        <a href="index.html?category=daily" data-category-name="daily">每日记录</a>
+      </nav>
+    </header>
+
+    <main class="notes-main" id="main-content">
+      <section class="page-hero archive-hero" aria-labelledby="notes-page-title">
+        <div class="page-hero-inner container">
+          <p class="page-kicker">ARCHIVE</p>
+          <h1 id="notes-page-title">文章归档</h1>
+          <p>按时间、分类和关键词，查找课程、训练、科研与日常记录。</p>
+        </div>
+      </section>
+
+      <div class="subpage-layout container">
+        <section class="archive-panel" aria-label="记录列表">
+          <div class="archive-tools" id="search">
+            <label class="notes-search">
+              <span class="visually-hidden">搜索记录</span>
+              <span class="search-mark" aria-hidden="true">⌕</span>
+              <input id="notes-search" type="search" placeholder="搜索标题、摘要、正文或标签…" autocomplete="off" />
+            </label>
+            <p id="results-count" aria-live="polite"></p>
+          </div>
+          <div class="archive-filter" id="archive-filter" role="group" aria-label="按分类筛选"></div>
+          <div class="archive-list" id="archive-list"></div>
+        </section>
+
+        <aside class="blog-sidebar subpage-sidebar" aria-label="文章导航">
+          <section class="sidebar-card profile-card compact-profile">
+            <div class="profile-avatar" data-owner-initials aria-hidden="true">ZLB</div>
+            <h2 data-owner-name>邹洛斌</h2>
+            <p data-owner-intro>记录课程学习、体育训练、科研探索，以及平凡但重要的每一天。</p>
+            <div class="profile-stats">
+              <a href="index.html"><strong data-record-total>0</strong><span>文章</span></a>
+              <a href="index.html"><strong data-category-total>0</strong><span>分类</span></a>
+              <a href="index.html"><strong data-tag-total>0</strong><span>标签</span></a>
+            </div>
+          </section>
+          <section class="sidebar-card">
+            <h2><span aria-hidden="true">▦</span> 分类</h2>
+            <div class="sidebar-categories" data-sidebar-categories></div>
+          </section>
+          <section class="sidebar-card">
+            <h2><span aria-hidden="true">◷</span> 最近文章</h2>
+            <div class="sidebar-recent" data-sidebar-recent></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="current-year"></span> <strong data-owner-name>邹洛斌</strong></p>
+        <p>记录学习，也记录生活。</p>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="返回页面顶部">↑</button>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
